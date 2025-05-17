@@ -31,8 +31,8 @@ class _SplashScreenState extends State<SplashScreen> {
             child: Container(
               width: 113,
               height: 113,
-              decoration: BoxDecoration(
-                color: const Color(0xFFF1F0E9),
+              decoration: const BoxDecoration(
+                color: Color(0xFFF1F0E9),
                 shape: BoxShape.circle,
               ),
               child: Center(
@@ -47,14 +47,14 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
 
           // Teks "GrowCoffee." di bawah logo
-          Positioned(
+          const Positioned(
             left: 129,
             top: 310,
             child: Text(
               'GrowCoffee.',
               style: TextStyle(
                 fontFamily: 'Calistoga',
-                color: const Color(0xFF0D4715),
+                color: Color(0xFF0D4715),
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 1.5,
@@ -63,23 +63,23 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
 
           // Circular Progress Indicator
-          Positioned(
+          const Positioned(
             left: 182,
             top: 370,
-            child: const CircularProgressIndicator(
+            child: CircularProgressIndicator(
               color: Color(0xFF0D4715),
             ),
           ),
 
           // Tagline
-          Positioned(
+          const Positioned(
             left: 62,
             top: 600,
             child: Text(
               'Penyiraman Cerdas, Kopi Berkualitas',
               style: TextStyle(
                 fontFamily: 'Pacifico',
-                color: const Color(0xFF0D4715),
+                color: Color(0xFF0D4715),
                 fontSize: 15,
                 fontWeight: FontWeight.normal,
                 letterSpacing: 1.2,
@@ -88,7 +88,7 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
 
           // Credit Text di paling bawah
-          Positioned(
+          const Positioned(
             bottom: 30,
             left: 0,
             right: 0,
@@ -97,7 +97,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 '© GrowCoffee 2024',
                 style: TextStyle(
                   fontFamily: 'Poppins',
-                  color: const Color(0xFF0D4715),
+                  color: Color(0xFF0D4715),
                   fontSize: 13,
                   fontWeight: FontWeight.bold,
                 ),

@@ -21,18 +21,18 @@ class SignInScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 32),
-            TextField(
+            const TextField(
               decoration: InputDecoration(
                 labelText: 'Email',
-                border: const OutlineInputBorder(),
+                border: OutlineInputBorder(),
               ),
             ),
             const SizedBox(height: 16),
-            TextField(
+            const TextField(
               obscureText: true,
               decoration: InputDecoration(
                 labelText: 'Password',
-                border: const OutlineInputBorder(),
+                border: OutlineInputBorder(),
               ),
             ),
             const SizedBox(height: 24),

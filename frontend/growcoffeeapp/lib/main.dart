@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 import 'screens/splash_screen.dart';
-import 'screens/intro_screen.dart'; // Pastikan path sesuai
-import 'screens/auth/sign_in_screen.dart'; // Pastikan path sesuai
-import 'screens/auth/sign_up_screen.dart'; // Pastikan path sesuai
-import 'screens/auth/forgot_password_screen.dart'; // Pastikan path sesuai
-import 'screens/home_screen.dart'; // Pastikan path sesuai
-import 'screens/project/create_project_screen.dart'; // Pastikan path sesuai
-import 'screens/project/project_detail_screen.dart'; // Pastikan path sesuai
-import 'screens/analytics/graph_screen.dart'; // Pastikan path sesuai
+import 'screens/intro_screen.dart';
+import 'screens/auth/sign_in_screen.dart';
+import 'screens/auth/sign_up_screen.dart';
+import 'screens/auth/forgot_password_screen.dart';
+import 'screens/home_screen.dart';
+import 'screens/project/create_project_screen.dart';
+import 'screens/project/project_detail_screen.dart';
+import 'screens/analytics/graph_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const GrowCoffeeApp());
 }
 

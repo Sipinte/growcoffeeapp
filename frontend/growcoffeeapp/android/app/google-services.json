@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "681570825872",
+    "project_id": "growcoffeeapp",
+    "storage_bucket": "growcoffeeapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681570825872:android:583c8b5d0a9e81c67aca15",
+        "android_client_info": {
+          "package_name": "com.example.growcoffeeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArv5IMZZMiT9jA1cCJw2ZN2hXCOxEvB-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
